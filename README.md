@@ -22,11 +22,11 @@ Project_All_Code.ino
 6.	금고 잠금/열림 상태 표시 기능 : 빨간색/녹색 LED 1개, 1K 저항 2개<br/><br/>
 
 ### 제작과정 & 하드웨어 구현
-<img src = "./figure/제작과정1.png" width="80%"><br/>
+<img src = "./figure/making1.png" width="80%"><br/>
 - 아두이노와 브래드보드에 세팅을 마치고 단열재를 이용해 금고를 제작함.
 - 벽면엔 금고의 잠금장치 역할인 서보 모터가 들어갈 공간을 확보함.<br/>
 
-<img src = "./figure/제작과정2.png" width="80%"><br/>
+<img src = "./figure/making2.png" width="80%"><br/>
 - 금고 정면 우측 상단에 금고의 잠금 여부를 표시하는 2개의 LED 핀을 부착함.
 - 금고 내부 좌측에 금고의 잠금을 제어하는 서보 모터를 부착함.
 - 금고 내부 하단 중앙에 금고의 진동 여부를 파악하는 진동센서 부착.
@@ -42,6 +42,26 @@ Project_All_Code.ino
 
 ### 기능 소개
 #### 1. 잠금/해제
+<img src = "./figure/intro.png" width="80%"><br/>
+- 핸드폰의 Arduino Bluetooth Controller 어플리케이션을 이용해 터미널로 금고를 제어함.
+- 금고 우측 상단의 LED를 이용해 잠금장치의 해제 여부를 확인함. 현재는 녹색 LED가 불이 들어와 있으므로 잠금장치가 작동 중임.<br/><br/>
+
+<img src = "./figure/intro1.png" width="80%"><br/>
+- 기본 세팅한 비밀번호 1234를 터미널에 입력하여 금고의 잠금장치를 해제함.
+- 붉은색 LED가 등이 들어왔으므로 정상적으로 금고의 잠금장치가 해제된 것을 확인 가능함.<br/><br/>
+
+<img src = "./figure/intro2.png" width="60%"><br/>
+- 터미널에 비밀번호를 잘못 입력할 시 이미지와 같은 경고문이 터미널에 출력됨.<br/><br/>
+
+<img src = "./figure/shake.png" width="80%"><br/>
+- 잠금 상태일 때 금고를 흔들 경우, 진동 센서가 금고의 흔들림을 감지해 사용자에게 불법적 접근이 있음을 터미널에 경고함.<br/><br/><br/>
+
+#### 2. 보안 설정
+<img src = "./figure/setting1.png" width="80%"><br/>
+<img src = "./figure/setting2.png" width="80%"><br/>
+<img src = "./figure/setting3.png" width="80%"><br/>
+#### 3. 리셋
+<img src = "./figure/reset.png" width="80%"><br/>
 
 
 
